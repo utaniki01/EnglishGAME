@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英単語クイズ</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    
+<h1 id="title">英単語ミニゲーム</h1>
+    <div class="card">
+      <div class="front">
+        <h1 id="Japanese">りんご</h1>
+      </div>
+      <div class="back">
+        <h1 id="English">apple</h1>
+      </div>
+                       
+      </div>
+    </div>
+
+    <div class="answer">
+      <label for="tangoField">　英単語を当てててください
+                                                      </label>
+      <input type="text" id="tangoField" autocomplete="off" required>
+
+      <input type="submit" value="回答" class="guessSubmit" >
+    </div>
+
+  <div class="back-next">
+   <input type="submit" value="次の単語へ" class="nextbutton">
+   <input type="submit" value="最初からやり直す" class="reset">
+</div>
+
+<div class="resultParas">
+    <p class="guesses">
+        これまでの正解数：
+        <span id="contentCount">0</span>/10
+    </p>
+
+    <p class="lastResult"></p>
+</div>
+</body>
+</html>
